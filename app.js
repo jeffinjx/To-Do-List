@@ -116,7 +116,7 @@ app.get("/:customListName", function(req, res) {
         list.save();
         res.redirect("/" + customListName);
       }else {
-        console.log("list named " + customListName + " exists");
+        // console.log("list named " + customListName + " exists");
         res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
       }
     }
